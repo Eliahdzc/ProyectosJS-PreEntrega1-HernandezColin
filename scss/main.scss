@@ -1,0 +1,32 @@
+.main-inicio {
+    padding: 5em;
+    margin: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content:space-between;
+}
+
+.texto {
+    font-family: 'Cookie', cursive;
+    padding: 10px 50px 10px 50px;
+    font-size: 50px;
+    text-align: center;
+
+}
+
+.titulo {
+    font-size: 100px;
+    padding: 10px 50px 10px 50px;
+    font-weight: 50px;
+    text-align: center;
+}
+.imagen {
+    background-image: url(../assets/imagen-inicio.jpg);
+    background-size: cover;
+    outline: 2px solid black;
+    border-radius: 10px;
+    height: 700px;
+    width: 700px;
+    align-items: center;
+}
