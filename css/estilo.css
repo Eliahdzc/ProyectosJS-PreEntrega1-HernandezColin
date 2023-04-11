@@ -26,7 +26,6 @@
 }
 
 .imagen {
-  background-image: url(../assets/mon2.jpg);
   background-size: cover;
   outline: 2px solid black;
   border-radius: 10px;
@@ -74,7 +73,7 @@
   font-family: "Marcellus", serif;
   font-weight: bolder;
   font-size: larger;
-  background-image: url(/assets/trianglify2.jpg.crdownload);
+  background-image: url(../assets/trianglify2.jpg.crdownload);
   background-size: cover;
 }
 
