@@ -26,7 +26,7 @@
 }
 
 .imagen {
-  background-image: url(../assets/imagen-inicio.jpg);
+  background-image: url(../assets/mon2.jpg);
   background-size: cover;
   outline: 2px solid black;
   border-radius: 10px;
@@ -35,11 +35,47 @@
   align-items: center;
 }
 
+.overlay {
+  margin: 0px auto;
+  width: 800px;
+  height: 800px;
+  display: grid;
+  grid-template-areas: "img";
+  border-radius: 1em;
+  overflow: hidden;
+}
+
+.overlay:hover .overlay-copy {
+  transform: translate(0);
+}
+
+.overlay-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  grid-area: img;
+}
+
+.overlay-copy {
+  grid-area: img;
+  background-color: rgba(225, 184, 160, 0.778);
+  color: rgb(245, 241, 236);
+  padding: 0 1.5rem;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  display: block;
+  align-items: center;
+  transition: transform 0.3s;
+  transform: translate(100%, 100%);
+}
+
 .letra-body {
-  font-family: "Parisienne", cursive;
+  font-family: "Marcellus", serif;
   font-weight: bolder;
   font-size: larger;
-  background-image: linear-gradient(#d9a7c7, #fffcdc);
+  background-image: url(/assets/trianglify2.jpg.crdownload);
+  background-size: cover;
 }
 
 /*# sourceMappingURL=estilo.css.map */
