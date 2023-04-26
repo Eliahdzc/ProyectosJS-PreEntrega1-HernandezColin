@@ -38,7 +38,7 @@ function agregarNuevoCliente () {
     localStorage.setItem("clientes", JSON.stringify(clientes))
     localStorage.setItem("cliente", JSON.stringify(cliente))
     console.log(cliente.nombre)
-    // location.href = "recomendaciones.html"
+    location.href = "recomendaciones.html"
 }
 
 let objetoCliente = JSON.parse(localStorage.getItem("cliente"))
