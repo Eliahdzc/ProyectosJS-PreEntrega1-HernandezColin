@@ -1,3 +1,11 @@
-.nombre {
-    font-family: 'Cookie', cursive;
+// 
+
+.menu-navegador {
+    display: flex;
+    color:  rgba(120, 3, 3, 0.878);
 }
+
+.nav {
+    flex-direction: row;
+}
+
