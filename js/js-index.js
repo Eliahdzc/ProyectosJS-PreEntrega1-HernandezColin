@@ -810,13 +810,13 @@ if (usuario) {
     localStorage.setItem("cliente", JSON.stringify(usuario))
     location.href = "recomendaciones.html"
 } else {
-    sweetAlertswal("Here's a message!", "It's pretty, isn't it?")
+   alert("Lo sentimos, el usuario no existe" + "\nFavor de Registrarse" )
     nombreUsuario.value = ""
     claveUsuario.value = ""
 }
 
 }
-
+login()
 
 // const clientes = [
 //     {
