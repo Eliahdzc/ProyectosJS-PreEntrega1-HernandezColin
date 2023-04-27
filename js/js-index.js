@@ -816,7 +816,6 @@ if (usuario) {
 }
 
 }
-login()
 
 // const clientes = [
 //     {

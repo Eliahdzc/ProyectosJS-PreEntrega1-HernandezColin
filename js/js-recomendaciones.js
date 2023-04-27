@@ -870,8 +870,13 @@ function agregarAlCarrito(e) {
     if(productosEnCarrito.some(producto => producto.id === idBoton)) {
         const index = productosEnCarrito.findIndex(producto => producto.id === idBoton)
         productosEnCarrito[index].cantidad++
+        // Agregamos subtotal
+        productoAgregado.subtotal = productoAgregado.precio * productoAgregado.cantidad
     }else {
         productoAgregado.cantidad = 1
+        // Agregamos subtotal
+        productoAgregado.subtotal = productoAgregado.precio * productoAgregado.cantidad
+
         productosEnCarrito.push(productoAgregado)
         console.log(productosEnCarrito)
     }

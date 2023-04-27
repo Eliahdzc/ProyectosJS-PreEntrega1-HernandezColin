@@ -70,7 +70,7 @@ cargarProductosCarrito()
 
 
 function total(){
-    let compra = carritoCompra.reduce((acc, producto)=> acc + producto.precio, 0);
+    let compra = carritoCompra.reduce((acc, producto)=> acc + producto.subtotal, 0);
     const totalNuevo = document.getElementById("total");
     totalNuevo.innerText = `$ ${compra}`
     console.log(compra)
