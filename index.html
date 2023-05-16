@@ -13,6 +13,8 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cookie&family=Marcellus&family=Marck+Script&family=Parisienne&family=Playfair+Display:wght@500&family=Righteous&display=swap"
     rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link rel="stylesheet" href="css/estilo.css">
 </head>
 
@@ -37,8 +39,8 @@
 
       <img src="assets/fotos/01.jpg" class="overlay-img" alt="imagen-index">
       <div class="overlay-copy">
-        <h1>Montse Laguna</h1>
-        <h2>Respira, Inspira, Ignora y Vive</h2>
+        <h1 class="nombre">Montse Laguna</h1>
+        <h2 class="lema">Respira, Inspira, Ignora y Vive</h2>
         <main class="main-inicio">
 
           <div class="contenido">
@@ -52,11 +54,13 @@
               <input id="clave-usuario" type="text">
               <button id="boton-confirmar" class="boton-confirmar">Confirmar</button>
             </div>
-            <div class="login">
-              <h2>Nuevo Cliente</h2>
+            <div class="registro">
+              <h2 class="login">Nuevo Cliente</h2>
+              <div class="login">
               <a class="registro" href="registro.html">
-                <button id="boton-registro" class="boton-registro">Registro</button>
+                <button id="boton-registro" class="boton-registro">Registrate</button>
               </a>
+              </div>
             </div>
 
           </div>
@@ -75,6 +79,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"></script>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
       <script src="js/js-index.js" type="text/JavaScript">
     </script>
   </body>

@@ -1,0 +1,602 @@
+[
+    {
+      "id": "producto p_j_s 01",
+      "titulo": "Agua Micelar en Aceite",
+      "imagen": "assets/piel-joven-seca/01.jpg",
+      "categoria": {
+        "tipo": "Piel Jóven Seca",
+        "id": "joven-seca"
+      },
+      "precio": 750
+    },
+    {
+      "id": "producto p_j_s 02",
+      "titulo": "Agua Micelar Agua de Rosas",
+      "imagen": "assets/piel-joven-seca/02.jpg",
+      "categoria": {
+        "tipo": "Piel Jóven Seca",
+        "id": "joven-seca"
+      },
+      "precio": 750
+    },
+    {
+      "id": "producto p_j_s 03",
+      "titulo": "Crema Hidratante Anti-brillo",
+      "imagen": "assets/piel-joven-seca/03.jpg",
+      "categoria": {
+        "tipo": "Piel Jóven Seca",
+        "id": "joven-seca"
+      },
+      "precio": 750
+    },
+    {
+      "id": "producto p_j_s 04",
+      "titulo": "Dermo-Cleanser",
+      "imagen": "assets/piel-joven-seca/04.jpg",
+      "categoria": {
+        "tipo": "Piel Jóven Seca",
+        "id": "joven-seca"
+      },
+      "precio": 750
+    },
+    {
+      "id": "producto p_j_s 05",
+      "titulo": "Agua Micelar",
+      "imagen": "assets/piel-joven-seca/05.jpg",
+      "categoria": {
+        "tipo": "Piel Jóven Seca",
+        "id": "joven-seca"
+      },
+      "precio": 750
+    },
+    {
+      "id": "producto p_j_s 06",
+      "titulo": "Toleraine Cream",
+      "imagen": "assets/piel-joven-seca/06.jpg",
+      "categoria": {
+        "tipo": "Piel Jóven Seca",
+        "id": "joven-seca"
+      },
+      "precio": 750
+    },
+    {
+      "id": "producto p_j_s 07",
+      "titulo": "Toleraine Sensitive",
+      "imagen": "assets/piel-joven-seca/07.jpg",
+      "categoria": {
+        "tipo": "Piel Jóven Seca",
+        "id": "joven-seca"
+      },
+      "precio": 750
+    },
+    {
+      "id": "producto p_j_s 08",
+      "titulo": "Acido Hialuronico",
+      "imagen": "assets/piel-joven-seca/08.jpg",
+      "categoria": {
+        "tipo": "Piel Jóven Seca",
+        "id": "joven-seca"
+      },
+      "precio": 750
+    },
+    {
+      "id": "producto p_j_s 09",
+      "titulo": "Acido Hialuronico Anti-brillo",
+      "imagen": "assets/piel-joven-seca/09.jpg",
+      "categoria": {
+        "tipo": "Piel Jóven Seca",
+        "id": "joven-seca"
+      },
+      "precio": 750
+    },
+    {
+      "id": "producto p_j_s 10",
+      "titulo": "Agua Micelar con Acido Hialuronico",
+      "imagen": "assets/piel-joven-seca/10.jpg",
+      "categoria": {
+        "tipo": "Piel Jóven Seca",
+        "id": "joven-seca"
+      },
+      "precio": 750
+    },
+    {
+      "id": "producto p_j_m 01",
+      "titulo": "Crema Hidratante piel Mixta",
+      "imagen": "assets/piel-joven-mixta/01.jpg",
+      "categoria": {
+        "tipo": "Piel Jóven Mixta",
+        "id": "joven-mixta"
+      },
+      "precio": 750
+    },
+    {
+      "id": "producto p_j_m 02",
+      "titulo": "Agua Micelar",
+      "imagen": "assets/piel-joven-mixta/02.jpg",
+      "categoria": {
+        "tipo": "Piel Jóven Mixta",
+        "id": "joven-mixta"
+      },
+      "precio": 750
+    },
+    {
+      "id": "producto p_j_m 03",
+      "titulo": "Agua Micelar con activos de Carbon",
+      "imagen": "assets/piel-joven-mixta/03.jpg",
+      "categoria": {
+        "tipo": "Piel Jóven Mixta",
+        "id": "joven-mixta"
+      },
+      "precio": 750
+    },
+    {
+      "id": "producto p_j_m 04",
+      "titulo": "Dermo-Cleanser",
+      "imagen": "assets/piel-joven-mixta/04.jpg",
+      "categoria": {
+        "tipo": "Piel Jóven Mixta",
+        "id": "joven-mixta"
+      },
+      "precio": 750
+    },
+    {
+      "id": "producto p_j_m 05",
+      "titulo": "Dermo-Cleanser",
+      "imagen": "assets/piel-joven-mixta/05.jpg",
+      "categoria": {
+        "tipo": "Piel Jóven Mixta",
+        "id": "joven-mixta"
+      },
+      "precio": 750
+    },
+    {
+      "id": "producto p_j_m 06",
+      "titulo": "Acido Hialuronico",
+      "imagen": "assets/piel-joven-mixta/06.jpg",
+      "categoria": {
+        "tipo": "Piel Jóven Mixta",
+        "id": "joven-mixta"
+      },
+      "precio": 750
+    },
+    {
+      "id": "producto p_j_m 07",
+      "titulo": "Acido hialuronico",
+      "imagen": "assets/piel-joven-mixta/07.jpg",
+      "categoria": {
+        "tipo": "Piel Jóven Mixta",
+        "id": "joven-mixta"
+      },
+      "precio": 750
+    },
+    {
+      "id": "producto p_j_m 08",
+      "titulo": "Tolerine",
+      "imagen": "assets/piel-joven-mixta/08.jpg",
+      "categoria": {
+        "tipo": "Piel Jóven Mixta",
+        "id": "joven-mixta"
+      },
+      "precio": 750
+    },
+    {
+      "id": "producto p_j_m 09",
+      "titulo": "Tolerine",
+      "imagen": "assets/piel-joven-mixta/09.jpg",
+      "categoria": {
+        "tipo": "Piel Jóven Mixta",
+        "id": "joven-mixta"
+      },
+      "precio": 750
+    },
+    {
+      "id": "producto p_j_m 10",
+      "titulo": "Tolerine Hidratante Mixta",
+      "imagen": "assets/piel-joven-mixta/10.jpg",
+      "categoria": {
+        "tipo": "Piel Jóven Mixta",
+        "id": "joven-mixta"
+      },
+      "precio": 750
+    },
+    {
+      "id": "producto p_j_g 01",
+      "titulo": "Crema Hidratante piel Grasa",
+      "imagen": "assets/piel-joven-grasa/01.jpg",
+      "categoria": {
+        "tipo": "Piel Jóven Grasa",
+        "id": "joven-grasa"
+      },
+      "precio": 750
+    },
+    {
+      "id": "producto p_j_g 02",
+      "titulo": "Agua Micelar",
+      "imagen": "assets/piel-joven-grasa/02.jpg",
+      "categoria": {
+        "tipo": "Piel Jóven Grasa",
+        "id": "joven-grasa"
+      },
+      "precio": 750
+    },
+    {
+      "id": "producto p_j_g 03",
+      "titulo": "Agua Micelar con activos de Carbon",
+      "imagen": "assets/piel-joven-grasa/03.jpg",
+      "categoria": {
+        "tipo": "Piel Jóven Grasa",
+        "id": "joven-grasa"
+      },
+      "precio": 750
+    },
+    {
+      "id": "producto p_j_g 04",
+      "titulo": "Dermo-Cleanser",
+      "imagen": "assets/piel-joven-grasa/04.jpg",
+      "categoria": {
+        "tipo": "Piel Jóven Grasa",
+        "id": "joven-grasa"
+      },
+      "precio": 750
+    },
+    {
+      "id": "producto p_j_g 05",
+      "titulo": "Dermo-Cleanser",
+      "imagen": "assets/piel-joven-grasa/05.jpg",
+      "categoria": {
+        "tipo": "Piel Jóven Grasa",
+        "id": "joven-grasa"
+      },
+      "precio": 750
+    },
+    {
+      "id": "producto p_j_g 06",
+      "titulo": "Acido Hialuronico",
+      "imagen": "assets/piel-joven-grasa/06.jpg",
+      "categoria": {
+        "tipo": "Piel Jóven Grasa",
+        "id": "joven-grasa"
+      },
+      "precio": 750
+    },
+    {
+      "id": "producto p_j_g 07",
+      "titulo": "Acido hialuronico",
+      "imagen": "assets/piel-joven-grasa/07.jpg",
+      "categoria": {
+        "tipo": "Piel Jóven Grasa",
+        "id": "joven-grasa"
+      },
+      "precio": 750
+    },
+    {
+      "id": "producto p_j_g 08",
+      "titulo": "Tolerine",
+      "imagen": "assets/piel-joven-grasa/08.jpg",
+      "categoria": {
+        "tipo": "Piel Jóven Grasa",
+        "id": "joven-grasa"
+      },
+      "precio": 750
+    },
+    {
+      "id": "producto p_j_g 09",
+      "titulo": "Tolerine",
+      "imagen": "assets/piel-joven-grasa/09.jpg",
+      "categoria": {
+        "tipo": "Piel Jóven Grasa",
+        "id": "joven-grasa"
+      },
+      "precio": 750
+    },
+    {
+      "id": "producto p_j_g 10",
+      "titulo": "Tolerine Hidratante",
+      "imagen": "assets/piel-joven-grasa/10.jpg",
+      "categoria": {
+        "tipo": "Piel Jóven Grasa",
+        "id": "joven-grasa"
+      },
+      "precio": 750
+    },
+    {
+      "id": "producto p_m_s 01",
+      "titulo": "Agua Micelar en Aceite",
+      "imagen": "assets/piel-madura-seca/01.jpg",
+      "categoria": {
+        "tipo": "Piel Madura Seca",
+        "id": "madura-seca"
+      },
+      "precio": 750
+    },
+    {
+      "id": "producto p_m_s 02",
+      "titulo": "Agua Micelar Agua de Rosas",
+      "imagen": "assets/piel-madura-seca/02.jpg",
+      "categoria": {
+        "tipo": "Piel Madura Seca",
+        "id": "madura-seca"
+      },
+      "precio": 750
+    },
+    {
+      "id": "producto p_m_s 03",
+      "titulo": "Crema Hidratante Anti-brillo",
+      "imagen": "assets/piel-madura-seca/03.jpg",
+      "categoria": {
+        "tipo": "Piel Madura Seca",
+        "id": "madura-seca"
+      },
+      "precio": 750
+    },
+    {
+      "id": "producto p_m_s 04",
+      "titulo": "Dermo-Cleanser",
+      "imagen": "assets/piel-madura-seca/04.jpg",
+      "categoria": {
+        "tipo": "Piel Madura Seca",
+        "id": "madura-seca"
+      },
+      "precio": 750
+    },
+    {
+      "id": "producto p_m_s 05",
+      "titulo": "Agua Micelar",
+      "imagen": "assets/piel-madura-seca/05.jpg",
+      "categoria": {
+        "tipo": "Piel Madura Seca",
+        "id": "madura-seca"
+      },
+      "precio": 750
+    },
+    {
+      "id": "producto p_m_s 06",
+      "titulo": "Toleraine Cream",
+      "imagen": "assets/piel-madura-seca/06.jpg",
+      "categoria": {
+        "tipo": "Piel Madura Seca",
+        "id": "madura-seca"
+      },
+      "precio": 750
+    },
+    {
+      "id": "producto p_m_s 07",
+      "titulo": "Toleraine Sensitive",
+      "imagen": "assets/piel-madura-seca/07.jpg",
+      "categoria": {
+        "tipo": "Piel Madura Seca",
+        "id": "madura-seca"
+      },
+      "precio": 750
+    },
+    {
+      "id": "producto p_m_s 08",
+      "titulo": "Acido Hialuronico",
+      "imagen": "assets/piel-madura-seca/08.jpg",
+      "categoria": {
+        "tipo": "Piel Madura Seca",
+        "id": "madura-seca"
+      },
+      "precio": 750
+    },
+    {
+      "id": "producto p_m_s 09",
+      "titulo": "Acido Hialuronico Anti-brillo",
+      "imagen": "assets/piel-madura-seca/09.jpg",
+      "categoria": {
+        "tipo": "Piel Madura Seca",
+        "id": "madura-seca"
+      },
+      "precio": 750
+    },
+    {
+      "id": "producto p_m_s 10",
+      "titulo": "Agua Micelar con Acido Hialuronico",
+      "imagen": "assets/piel-madura-seca/10.jpg",
+      "categoria": {
+        "tipo": "Piel Madura Seca",
+        "id": "madura-seca"
+      },
+      "precio": 750
+    },
+    {
+      "id": "producto p_m_m 01",
+      "titulo": "Crema Hidratante piel Mixta",
+      "imagen": "assets/piel-madura-mixta/01.jpg",
+      "categoria": {
+        "tipo": "Piel Madura Mixta",
+        "id": "madura-mixta"
+      },
+      "precio": 750
+    },
+    {
+      "id": "producto p_m_m 02",
+      "titulo": "Agua Micelar",
+      "imagen": "assets/piel-madura-mixta/02.jpg",
+      "categoria": {
+        "tipo": "Piel Madura Mixta",
+        "id": "madura-mixta"
+      },
+      "precio": 750
+    },
+    {
+      "id": "producto p_m_m 03",
+      "titulo": "Agua Micelar con activos de Carbon",
+      "imagen": "assets/piel-madura-mixta/03.jpg",
+      "categoria": {
+        "tipo": "Piel Madura Mixta",
+        "id": "madura-mixta"
+      },
+      "precio": 750
+    },
+    {
+      "id": "producto p_m_m 04",
+      "titulo": "Dermo-Cleanser",
+      "imagen": "assets/piel-madura-mixta/04.jpg",
+      "categoria": {
+        "tipo": "Piel Madura Mixta",
+        "id": "madura-mixta"
+      },
+      "precio": 750
+    },
+    {
+      "id": "producto p_m_m 05",
+      "titulo": "Dermo-Cleanser",
+      "imagen": "assets/piel-madura-mixta/05.jpg",
+      "categoria": {
+        "tipo": "Piel Madura Mixta",
+        "id": "madura-mixta"
+      },
+      "precio": 750
+    },
+    {
+      "id": "producto p_m_m 06",
+      "titulo": "Acido Hialuronico",
+      "imagen": "assets/piel-madura-mixta/06.jpg",
+      "categoria": {
+        "tipo": "Piel Madura Mixta",
+        "id": "madura-mixta"
+      },
+      "precio": 750
+    },
+    {
+      "id": "producto p_m_m 07",
+      "titulo": "Acido hialuronico",
+      "imagen": "assets/piel-madura-mixta/07.jpg",
+      "categoria": {
+        "tipo": "Piel Madura Mixta",
+        "id": "madura-mixta"
+      },
+      "precio": 750
+    },
+    {
+      "id": "producto p_m_m 08",
+      "titulo": "Tolerine",
+      "imagen": "assets/piel-madura-mixta/08.jpg",
+      "categoria": {
+        "tipo": "Piel Madura Mixta",
+        "id": "madura-mixta"
+      },
+      "precio": 750
+    },
+    {
+      "id": "producto p_m_m 09",
+      "titulo": "Tolerine",
+      "imagen": "assets/piel-madura-mixta/09.jpg",
+      "categoria": {
+        "tipo": "Piel Madura Mixta",
+        "id": "madura-mixta"
+      },
+      "precio": 750
+    },
+    {
+      "id": "producto p_m_m 10",
+      "titulo": "Tolerine Hidratante Mixta",
+      "imagen": "assets/piel-madura-mixta/10.jpg",
+      "categoria": {
+        "tipo": "Piel Madura Mixta",
+        "id": "madura-mixta"
+      },
+      "precio": 750
+    },
+    {
+      "id": "producto p_m_g 01",
+      "titulo": "Crema Hidratante piel Grasa",
+      "imagen": "assets/piel-madura-grasa/01.jpg",
+      "categoria": {
+        "tipo": "Piel Madura Grasa",
+        "id": "madura-grasa"
+      },
+      "precio": 750
+    },
+    {
+      "id": "producto p_m_g 02",
+      "titulo": "Agua Micelar",
+      "imagen": "assets/piel-madura-grasa/02.jpg",
+      "categoria": {
+        "tipo": "Piel Madura Grasa",
+        "id": "madura-grasa"
+      },
+      "precio": 750
+    },
+    {
+      "id": "producto p_m_g 03",
+      "titulo": "Agua Micelar con activos de Carbon",
+      "imagen": "assets/piel-madura-grasa/03.jpg",
+      "categoria": {
+        "tipo": "Piel Madura Grasa",
+        "id": "madura-grasa"
+      },
+      "precio": 750
+    },
+    {
+      "id": "producto p_m_g 04",
+      "titulo": "Dermo-Cleanser",
+      "imagen": "assets/piel-madura-grasa/04.jpg",
+      "categoria": {
+        "tipo": "Piel Madura Grasa",
+        "id": "madura-grasa"
+      },
+      "precio": 750
+    },
+    {
+      "id": "producto p_m_g 05",
+      "titulo": "Dermo-Cleanser",
+      "imagen": "assets/piel-madura-grasa/05.jpg",
+      "categoria": {
+        "tipo": "Piel Madura Grasa",
+        "id": "madura-grasa"
+      },
+      "precio": 750
+    },
+    {
+      "id": "producto p_m_g 06",
+      "titulo": "Acido Hialuronico",
+      "imagen": "assets/piel-madura-grasa/06.jpg",
+      "categoria": {
+        "tipo": "Piel Madura Grasa",
+        "id": "madura-grasa"
+      },
+      "precio": 750
+    },
+    {
+      "id": "producto p_m_g 07",
+      "titulo": "Acido hialuronico",
+      "imagen": "assets/piel-madura-grasa/07.jpg",
+      "categoria": {
+        "tipo": "Piel Madura Grasa",
+        "id": "madura-grasa"
+      },
+      "precio": 750
+    },
+    {
+      "id": "producto p_m_g 08",
+      "titulo": "Tolerine",
+      "imagen": "assets/piel-madura-grasa/08.jpg",
+      "categoria": {
+        "tipo": "Piel Madura Grasa",
+        "id": "madura-grasa"
+      },
+      "precio": 750
+    },
+    {
+      "id": "producto p_m_g 09",
+      "titulo": "Tolerine",
+      "imagen": "assets/piel-madura-grasa/09.jpg",
+      "categoria": {
+        "tipo": "Piel Madura Grasa",
+        "id": "madura-grasa"
+      },
+      "precio": 750
+    },
+    {
+      "id": "producto p_m_g 10",
+      "titulo": "Tolerine Hidratante",
+      "imagen": "assets/piel-madura-grasa/10.jpg",
+      "categoria": {
+        "tipo": "Piel Madura Grasa",
+        "id": "madura-grasa"
+      },
+      "precio": 750
+    }
+  ]
