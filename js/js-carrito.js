@@ -1,18 +1,4 @@
-
-
-const nombreCompra = document.querySelector("#logo");
-
-function compraNombre() {
-    let objetoClienteCompra = JSON.parse(localStorage.getItem("cliente"))
-    const nombre = objetoClienteCompra.nombre
-    nombreCompra.innerText = `Gracias por tu compra, ${nombre} `
-}
-
-compraNombre()
-
-const carritoCompra = JSON.parse(localStorage.getItem("carrito"));
-console.log(carritoCompra);
-
+// Seleccion de elementos
 const contenedorCarritoVacio = document.querySelector("#carrito-vacio")
 const contenedorCarritoProductos = document.querySelector("#carrito-productos")
 const contenedorCarritoAcciones = document.querySelector("#carrito-acciones")
@@ -20,7 +6,20 @@ const contenedorCarritoComprado = document.querySelector("#carrito-comprado")
 const totalCompra = document.querySelector("#carrito-acciones-total")
 const botonCompra = document.querySelector("#comprar")
 const botonVaciarCarrito = document.querySelector("#vaciar-carrito")
+const nombreCompra = document.querySelector("#logo");
 
+// Se genera nombre llamando al cliente desde localStorage
+function compraNombre() {
+    let objetoClienteCompra = JSON.parse(localStorage.getItem("cliente"))
+    const nombre = objetoClienteCompra.nombre
+    nombreCompra.innerText = `Gracias por tu compra, ${nombre} `
+}
+compraNombre()
+
+// Se llaman datos desde localStorage
+const carritoCompra = JSON.parse(localStorage.getItem("carrito"));
+
+// Esta funcion verifica los datos encontrados y genera las tarjetas para pintar en el DOM
 function cargarProductosCarrito() {
     if (carritoCompra) {
 
@@ -72,7 +71,7 @@ function cargarProductosCarrito() {
 }
 cargarProductosCarrito();
 
-
+// Esta funcion calcula el total de la compra sustituyendo en HTML por la variable compra
 function total() {
     let compra = carritoCompra.reduce((acc, producto) => acc + producto.subtotal, 0);
     const totalNuevo = document.getElementById("total");
@@ -80,7 +79,7 @@ function total() {
     console.log(compra)
 }
 total()
-
+// Se activa boton compra y se ejecuta funcion para vaciar carrito de localStorage y regresar a index 
 botonCompra.addEventListener("click", compra)
 
 function compra() {
@@ -89,28 +88,11 @@ function compra() {
     location.href = "index.html"
 }
 
-function agregarBotonesEliminarAlCarrito() {
-    const botonesEliminarCarrito = document.querySelectorAll('.carrito-producto-eliminar')
-    botonesEliminarCarrito.forEach((boton, indice) => {
-        boton.addEventListener('click', () => eliminarProductoCarrito(indice))
-    })
-}
-agregarBotonesEliminarAlCarrito()
-
-
-function actualizarBotonEliminar() {
-    botonesEliminar = document.querySelectorAll("eliminar-producto");
-
-    botonesEliminar.forEach(boton => {
-        boton.addEventListener("click", eliminarDelCarrito);
-    })
-}
-
-
-
+// Se activa boton de vaciar carrito y se ejecuta un sweetAlert para confirmar accion
 botonVaciarCarrito.addEventListener("click", vaciarCarrito);
-function vaciarCarrito() {
 
+function vaciarCarrito() {
+    
     Swal.fire({
         title: '¿Estás seguro?',
         icon: 'question',
@@ -129,27 +111,14 @@ function vaciarCarrito() {
     })
 }
 
-
-function actualizarTotal() {
-    const totalCalculado = carritoCompra.reduce((acc, producto) => acc + (producto.precio * producto.cantidad), 0);
-    const totalNuevo = document.getElementById("total");
-    totalNuevo.innerText = `$ ${totalCalculado}`
+// Se activan los botones con evenlistener para eliminar productos uno por uno, mostrando un toastify; tambien se actualiza el array del carrito en localStorage
+function agregarBotonesEliminarAlCarrito() {
+    const botonesEliminarCarrito = document.querySelectorAll('.carrito-producto-eliminar')
+    botonesEliminarCarrito.forEach((boton, indice) => {
+        boton.addEventListener('click', () => eliminarProductoCarrito(indice))
+    })
 }
-
-botonCompra
-    .addEventListener("click", comprarCarrito);
-
-function comprarCarrito() {
-
-    carritoCompra.length = 0;
-    localStorage.setItem("productos-en-carrito", JSON.stringify(carritoCompra));
-
-    contenedorCarritoVacio.classList.add("disabled");
-    contenedorCarritoProductos.classList.add("disabled");
-    contenedorCarritoAcciones.classList.add("disabled");
-    contenedorCarritoComprado.classList.remove("disabled");
-
-}
+agregarBotonesEliminarAlCarrito()
 
 function eliminarProductoCarrito(indiceProducto) {
     console.log(indiceProducto)
@@ -173,10 +142,23 @@ function eliminarProductoCarrito(indiceProducto) {
         },
         onClick: function () { }
     }).showToast();
-
+    
     carritoCompra.splice(indiceProducto, 1)
     localStorage.setItem("carrito", JSON.stringify(carritoCompra));
     cargarProductosCarrito()
     agregarBotonesEliminarAlCarrito()
 }
 
+function actualizarBotonEliminar() {
+    botonesEliminar = document.querySelectorAll("eliminar-producto");
+    
+    botonesEliminar.forEach(boton => {
+        boton.addEventListener("click", eliminarDelCarrito);
+    })
+}
+// Se actualiza el total de acuerdo a las acciones realizadas
+function actualizarTotal() {
+    const totalCalculado = carritoCompra.reduce((acc, producto) => acc + (producto.precio * producto.cantidad), 0);
+    const totalNuevo = document.getElementById("total");
+    totalNuevo.innerText = `$ ${totalCalculado}`
+}

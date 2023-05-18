@@ -1,13 +1,14 @@
-
+// Seleccion de elementos
 const contenedorProductos = document.querySelector("#contenedor-productos");
 const botonesCategorias = document.querySelectorAll(".boton-categoria");
 const tituloPrincipal = document.querySelector("#titulo-principal");
-let botonesAgregar = document.querySelectorAll(".producto-agregar");
 const nombreSaludo = document.querySelector("#logo");
-const numerito = document.querySelector("#numerito");
-
+const numeroProductos = document.querySelector("#numeroProductos");
+// botenesAgregar es una array dinamico en el codigo
+let botonesAgregar = document.querySelectorAll(".producto-agregar");
+// Inicializacion de array de productos
 let productos = []
-
+// Se traen los datos del archivo json
 fetch('../data/productos.json')
     .then(response => response.json())
     .then(data => {
@@ -15,16 +16,16 @@ fetch('../data/productos.json')
         productos = data
 
     })
-
-function construirNombre () {
+// Se genera nombre llamando cliente desde localStorages
+function construirNombreUsuario () {
     let objetoCliente = JSON.parse(localStorage.getItem("cliente"))
     const nombre = objetoCliente.nombre
     nombreSaludo.innerText = `Es un gusto saludarte, ${nombre} `
 }
 
-construirNombre()
+construirNombreUsuario()
 
-
+// Se generan las tarjetas de productos en el DOM
 function cargarProductos(productosElegidos) {
 
     contenedorProductos.innerHTML = ""
@@ -48,7 +49,7 @@ function cargarProductos(productosElegidos) {
     actualizarBotonesAgregar()
 }
 
-
+// Se activa evenlistener de acuerdo a categorias de producto
 botonesCategorias.forEach(boton => {
     boton.addEventListener("click", (e) => {
 
@@ -68,6 +69,7 @@ botonesCategorias.forEach(boton => {
     })
 })
 
+// Se activa boton para agragar productos al carrito de compra
 function actualizarBotonesAgregar() {
     botonesAgregar = document.querySelectorAll(".producto-agregar")
 
@@ -76,38 +78,29 @@ function actualizarBotonesAgregar() {
     })
 }
 
-let productosEnCarrito;
-
 const carritoCompraLS = JSON.parse(localStorage.getItem("carrito"));
+let productosEnCarrito;
 
 if (carritoCompraLS) {
     productosEnCarrito = carritoCompraLS;
-    actulizarNumerito()
+    actualizarNumeroProductosCarrito()
 }else {
-
     productosEnCarrito = []
 }
 
-
+// Se agragan productos al carrito
 function agregarAlCarrito(e) {
-
     const idBoton = e.currentTarget.id
-    console.log("botom", idBoton)
-    // console.log(id)
     const productoAgregado = productos.find(producto => producto.id === idBoton)
-    console.log(productoAgregado)
-    if(productosEnCarrito.some(producto => producto.id === idBoton)) {
+
+    if  (productosEnCarrito.some(producto => producto.id === idBoton)) {
         const index = productosEnCarrito.findIndex(producto => producto.id === idBoton)
         productosEnCarrito[index].cantidad++
-        // Agregamos subtotal
         productoAgregado.subtotal = productoAgregado.precio * productoAgregado.cantidad
-    }else {
+    } else {
         productoAgregado.cantidad = 1
-        // Agregamos subtotal
         productoAgregado.subtotal = productoAgregado.precio * productoAgregado.cantidad
-
         productosEnCarrito.push(productoAgregado)
-        console.log(productosEnCarrito)
     }
 
     Toastify({
@@ -131,12 +124,11 @@ function agregarAlCarrito(e) {
         onClick: function () { }
     }).showToast();
 
-    actulizarNumerito();
+    actualizarNumeroProductosCarrito();
     localStorage.setItem("carrito", JSON.stringify(productosEnCarrito))
 }
 
-function actulizarNumerito() {
+function actualizarNumeroProductosCarrito() {
     let nuevoNumerito = productosEnCarrito.reduce((acc, producto)=> acc + producto.cantidad, 0);
-    numerito.innerText = nuevoNumerito;
-    console.log(nuevoNumerito);
+    numeroProductos.innerText = nuevoNumerito;
 }

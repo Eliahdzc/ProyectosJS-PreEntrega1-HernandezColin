@@ -1,20 +1,19 @@
-
+// Seleccion de elementos
 const nombreUsuario = document.querySelector("#nombre-usuario");
 const claveUsuario = document.querySelector("#clave-usuario");
 const botonConfirmar = document.querySelector("#boton-confirmar");
 const botonRegistrar = document.querySelector("#boton-registrar");
 const botonSweetAlert = document.querySelector('swal2-confirm');
 
-botonConfirmar.addEventListener("click", login)
-function login() {
-  console.log(nombreUsuario.value)
-  console.log(claveUsuario.value)
+// Verificacion para iniciar login
 
-  const clientes = JSON.parse(localStorage.getItem("clientes"))
+botonConfirmar.addEventListener("click", login);
+
+function login() {
+  const clientes = JSON.parse(localStorage.getItem("clientes")) ?? []
   usuario = clientes.find(elem => elem.nombre === nombreUsuario.value && elem.clave === claveUsuario.value)
 
   if (usuario) {
-    console.log("si existe")
     localStorage.setItem("cliente", JSON.stringify(usuario))
     location.href = "recomendaciones.html"
   } else {
@@ -32,8 +31,9 @@ function login() {
       }
     })
 
+    //Verifica que se ejecute sweetAlert para asignarle el eventlistener 
     botonSweetAlert && botonSweetAlert.addEventListener("click", registro)
-
+    // Se dejan en blanco los valores de input
     nombreUsuario.value = ""
     claveUsuario.value = ""
   }
