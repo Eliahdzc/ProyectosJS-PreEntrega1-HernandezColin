@@ -11,9 +11,7 @@ function login() {
   console.log(claveUsuario.value)
 
   const clientes = JSON.parse(localStorage.getItem("clientes"))
-  const usuario = clientes.find(elem => elem.nombre === nombreUsuario.value && elem.clave === claveUsuario.value)
-
-  const cerrarAlerta = () => location.href = "registro.html"
+  usuario = clientes.find(elem => elem.nombre === nombreUsuario.value && elem.clave === claveUsuario.value)
 
   if (usuario) {
     console.log("si existe")
@@ -28,11 +26,13 @@ function login() {
       confirmButtonText: 'Regístrate',
     }).then((result) => {
       if (result.isConfirmed) {
-        cerrarAlerta()
+        location.href = "registro.html"
+      } else {
+        location.href = "index.html"
       }
     })
 
-    botonSweetAlert.addEventListener("click", registro)
+    botonSweetAlert && botonSweetAlert.addEventListener("click", registro)
 
     nombreUsuario.value = ""
     claveUsuario.value = ""
@@ -41,5 +41,5 @@ function login() {
 }
 
 function registro() {
-  location.href("registro.html")
+  location.href = "registro.html"
 }

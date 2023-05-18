@@ -109,6 +109,28 @@ function agregarAlCarrito(e) {
         productosEnCarrito.push(productoAgregado)
         console.log(productosEnCarrito)
     }
+
+    Toastify({
+        text: "Se agregó un producto al carrito",
+        duracion: 2000,
+        close: true,
+        gravity: "top",
+        position: "right",
+        stopOnFocus: true,
+        style: {
+            background: "linear-gradient(to right, #8B0000,  #FFE4E1)",
+            borderRadius: "2rem",
+            textTransform: "uppercase",
+            fontSize: ".75rem",
+            padding: "20px"
+        },
+        offset: {
+            x: '1.5rem',
+            y: '1.5rem'
+        },
+        onClick: function () { }
+    }).showToast();
+
     actulizarNumerito();
     localStorage.setItem("carrito", JSON.stringify(productosEnCarrito))
 }
