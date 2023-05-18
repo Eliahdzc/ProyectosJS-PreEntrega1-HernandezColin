@@ -9,7 +9,7 @@ let botonesAgregar = document.querySelectorAll(".producto-agregar");
 // Inicializacion de array de productos
 let productos = []
 // Se traen los datos del archivo json
-fetch('../data/productos.json')
+fetch('data/productos.json')
     .then(response => response.json())
     .then(data => {
         cargarProductos(data)
