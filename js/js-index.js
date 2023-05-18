@@ -33,9 +33,6 @@ function login() {
 
     //Verifica que se ejecute sweetAlert para asignarle el eventlistener 
     botonSweetAlert && botonSweetAlert.addEventListener("click", registro)
-    // Se dejan en blanco los valores de input
-    nombreUsuario.value = ""
-    claveUsuario.value = ""
   }
 
 }
